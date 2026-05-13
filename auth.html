@@ -1,99 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login / Register</title>
-  <style>
-    body{
-      font-family: Arial;
-      background:#f2f2f2;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-    }
-
-    .box{
-      background:white;
-      padding:20px;
-      width:320px;
-      border-radius:10px;
-      box-shadow:0 0 10px gray;
-    }
-
-    h2{
-      text-align:center;
-    }
-
-    input{
-      width:100%;
-      padding:10px;
-      margin:8px 0;
-    }
-
-    button{
-      width:100%;
-      padding:10px;
-      background:blue;
-      color:white;
-      border:none;
-      cursor:pointer;
-    }
-
-    .link{
-      text-align:center;
-      margin-top:10px;
-      color:blue;
-      cursor:pointer;
-    }
-
-    .hidden{
-      display:none;
-    }
-  </style>
+  <title>My Website</title>
 </head>
-
 <body>
-
-<div class="box">
-
-  <!-- LOGIN -->
-  <div id="loginBox">
-    <h2>Login</h2>
-    <input type="text" placeholder="Username">
-    <input type="password" placeholder="Password">
-    <button>Login</button>
-
-    <div class="link" onclick="showRegister()">
-      Create new account
-    </div>
-  </div>
-
-  <!-- REGISTER -->
-  <div id="registerBox" class="hidden">
-    <h2>Register</h2>
-    <input type="text" placeholder="Username">
-    <input type="email" placeholder="Email">
-    <input type="password" placeholder="Password">
-    <button>Register</button>
-
-    <div class="link" onclick="showLogin()">
-      Already have account? Login
-    </div>
-  </div>
-
-</div>
-
-<script>
-function showRegister(){
-  document.getElementById("loginBox").classList.add("hidden");
-  document.getElementById("registerBox").classList.remove("hidden");
-}
-
-function showLogin(){
-  document.getElementById("registerBox").classList.add("hidden");
-  document.getElementById("loginBox").classList.remove("hidden");
-}
-</script>
-
+  <h1>Website Live Hai</h1>
+  <p>Ye meri free website hai.</p>
 </body>
 </html>
