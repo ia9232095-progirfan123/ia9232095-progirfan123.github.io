@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My Website</title>
+  <title>Login / Register</title>
 </head>
 <body>
-  <h1>Website Live Hai</h1>
-  <p>Ye meri free website hai.</p>
+
+<h2>Login</h2>
+<input placeholder="Email"><br><br>
+<input type="password" placeholder="Password"><br><br>
+<button onclick="go()">Login</button>
+
+<p onclick="showRegister()">Create account</p>
+
+<div id="reg" style="display:none;">
+  <h2>Register</h2>
+  <input placeholder="Email"><br><br>
+  <input type="password" placeholder="Password"><br><br>
+  <button>Register</button>
+
+  <p onclick="showLogin()">Back to login</p>
+</div>
+
+<script>
+function showRegister(){
+  document.getElementById("reg").style.display="block";
+}
+function showLogin(){
+  document.getElementById("reg").style.display="none";
+}
+function go(){
+  window.location.href="dashboard.html";
+}
+</script>
+
 </body>
 </html>
